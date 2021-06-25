@@ -1,3 +1,4 @@
+// Run the playbook on jenkins server which is in public subnet
 ---
 - name: install tomcat server
   hosts: Tomcat
