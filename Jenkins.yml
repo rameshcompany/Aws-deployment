@@ -1,6 +1,6 @@
 ---
 - name: Install Jenkins
-  hosts: jenkins
+  hosts: Jenkins
   gather_facts: false
   become: true
   tasks:
