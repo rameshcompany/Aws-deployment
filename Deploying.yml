@@ -1,0 +1,8 @@
+---
+- hosts: all 
+  become: true
+  tasks: 
+    - name: example
+        copy:
+          src: /op/playbooks/wabapp/target/webapp.war
+          dest: /opt/apache-tomcat-9.0.44/webapps
