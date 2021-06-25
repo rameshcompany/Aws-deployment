@@ -1,5 +1,6 @@
+// run the playbook on jenkins server which is in public subnet
 ---
-- hosts: Deploy
+- hosts: Tomcat
   become: true
   tasks: 
     - name: example
