@@ -1,7 +1,6 @@
 pipeline {
-    agent {
-        label  ' agent'
-    }
+    agent any
+        
     tools{
         maven 'maven362'
     }
