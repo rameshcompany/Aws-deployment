@@ -1,2 +1,6 @@
-[client]
-192.168.0.198    ansible_user=root ansible_ssh_pass=redhat ansible_connection=ssh
+[Jenkins]
+172.32.1.5 (jenkins server which is in public subnet)
+
+[Tomcat]
+172.32.2.4 (tomcat server which is in private subnet)
+
