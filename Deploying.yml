@@ -1,5 +1,5 @@
 ---
-- hosts: all 
+- hosts: Deploy
   become: true
   tasks: 
     - name: example
