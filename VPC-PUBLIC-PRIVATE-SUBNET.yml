@@ -92,7 +92,7 @@
       vpc_id: "{{ ansibleVPC.vpc.id }}"
       region: "{{ vpc_region }}"
       rules:
-        - proto: ssh
+        - proto: tcp
           ports:
             - 22
           cidr_ip: 0.0.0.0/0
@@ -127,7 +127,7 @@
       vpc_id: "{{ ansibleVPC.vpc.id }}"
       region: "{{ vpc_region }}"
       rules:
-        - proto: ssh
+        - proto: tcp
           ports: 22
           group_name: sg_ansibleVPC_publicsubnet_jumphost
           rule_desc: allow only ssh access from public to private subnet servers
